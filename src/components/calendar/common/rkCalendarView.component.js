@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   View,
+  ViewPropTypes,
   FlatList,
 } from 'react-native';
 import PropTypes from 'prop-types';
@@ -68,7 +69,7 @@ export class RkCalendarView extends React.Component {
     onVisibleMonthChanged: PropTypes.func,
 
     style: PropTypes.shape({
-      container: View.propTypes.style,
+      container: ViewPropTypes.style,
       header: RkCalendarMonthHeader.propTypes.style,
       month: RkCalendarMonth.propTypes.style,
     }),

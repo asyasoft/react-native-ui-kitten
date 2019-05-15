@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   View,
+  ViewPropTypes,
   Text,
   Image,
 } from 'react-native';
@@ -34,8 +35,8 @@ export class RkTab extends React.Component {
 
     style: PropTypes.shape({
       container: PropTypes.shape({
-        base: View.propTypes.style,
-        selected: View.propTypes.style,
+        base: ViewPropTypes.style,
+        selected: ViewPropTypes.style,
       }),
       title: PropTypes.shape({
         base: Text.propTypes.style,

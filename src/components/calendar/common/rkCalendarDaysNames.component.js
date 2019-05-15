@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   View,
+  ViewPropTypes,
   Text,
   StyleSheet,
 } from 'react-native';
@@ -15,7 +16,7 @@ export class RkCalendarDaysNames extends React.Component {
      */
     daySize: PropTypes.number.isRequired,
     style: PropTypes.shape({
-      container: View.propTypes.style,
+      container: ViewPropTypes.style,
       text: Text.propTypes.style,
     }),
   };
@@ -59,4 +60,3 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
-

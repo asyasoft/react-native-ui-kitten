@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   View,
+  ViewPropTypes,
   Animated,
 } from 'react-native';
 
@@ -22,8 +23,8 @@ export class RkTabBarIndicator extends React.Component {
     componentWidth: PropTypes.number.isRequired,
 
     style: PropTypes.shape({
-      container: View.propTypes.style,
-      content: View.propTypes.style,
+      container: ViewPropTypes.style,
+      content: ViewPropTypes.style,
     }),
   };
   static defaultProps = {

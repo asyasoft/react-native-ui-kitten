@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   View,
+  ViewPropTypes,
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
@@ -30,8 +31,8 @@ export class RkTabBar extends React.Component {
 
     style: PropTypes.shape({
       container: PropTypes.shape({
-        base: ScrollView.propTypes.contentContainerStyle,
-        scrollable: ScrollView.propTypes.contentContainerStyle,
+        base: ScrollViewPropTypes.contentContainerStyle,
+        scrollable: ScrollViewPropTypes.contentContainerStyle,
       }),
       tab: RkTab.propTypes.style,
     }),
